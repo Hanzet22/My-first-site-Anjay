@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Effect Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Particle Network -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Main 3D Interactive Card -->
+  <main class="container">
+    <div class="tilt-card" id="tilt-card">
+      <div class="card-glare" id="card-glare"></div>
+
+      <div class="card-content">
+        <span class="badge">● INTERACTIVE MODE</span>
+
+        <h1 class="glitch" data-text="NEXUS WEB">NEXUS WEB</h1>
+
+        <p class="subtitle">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </p>
+
+        <div class="btn-group">
+          <button class="btn btn-primary magnetic-btn" id="burst-btn">
+            Ledakkan Efek
+          </button>
+          <button class="btn btn-secondary magnetic-btn" id="theme-btn">
+            Ganti Tema
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <strong>60 FPS</strong>
+            <span>Canvas Engine</span>
+          </div>
+          <div class="stat-item">
+            <strong>3D Tilt</strong>
+            <span>Mouse Tracking</span>
+          </div>
+          <div class="stat-item">
+            <strong>0 Libs</strong>
+            <span>Pure Vanilla</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
